@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "serori"
+version = "0.1.0"
+description = ""
+authors = ["revfyawo <10999207+revfyawo@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+pylint = "^3.0.3"
+mypy = "^1.8.0"
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.pycln]
+all = true
